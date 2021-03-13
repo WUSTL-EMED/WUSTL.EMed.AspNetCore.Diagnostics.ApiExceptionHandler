@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A middleware for setting the response body when an exception occurs on an api controller method based on an api path prefix.")]
 [assembly: AssemblyCompany("Emergency Medicine Information Technology Services, Department of Emergency Medicine, Washington University School of Medicine in St. Louis")]
 [assembly: AssemblyProduct("WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler")]
 [assembly: AssemblyCopyright("Copyright © 2021 Washington University in St. Louis")]
@@ -46,6 +46,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
 [assembly: AssemblyInformationalVersion(ThisAssembly.Git.Sha)]
