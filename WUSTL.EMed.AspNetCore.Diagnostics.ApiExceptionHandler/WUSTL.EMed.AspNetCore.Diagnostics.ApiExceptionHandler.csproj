@@ -16,6 +16,10 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageProjectUrl>https://github.com/WUSTL-EMED/WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/WUSTL-EMED/WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>aspnetcore diagnostics exception exceptionhandler exceptions</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

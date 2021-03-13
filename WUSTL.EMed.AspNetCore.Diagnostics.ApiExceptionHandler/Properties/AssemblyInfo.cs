@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("Emergency Medicine Information Technology Services, Department of Emergency Medicine, Washington University School of Medicine in St. Louis")]
 [assembly: AssemblyProduct("WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler")]
-[assembly: AssemblyCopyright("Copyright © 2020 Washington University in St. Louis")]
+[assembly: AssemblyCopyright("Copyright © 2021 Washington University in St. Louis")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
