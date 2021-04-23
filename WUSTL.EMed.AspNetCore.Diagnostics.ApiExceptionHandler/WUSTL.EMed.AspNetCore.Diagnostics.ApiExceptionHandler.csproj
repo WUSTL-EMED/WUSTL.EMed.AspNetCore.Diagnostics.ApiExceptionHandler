@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
@@ -20,7 +20,7 @@
     <RepositoryUrl>https://github.com/WUSTL-EMED/WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore diagnostics exception exceptionhandler exceptions</PackageTags>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.1.1</PackageVersion>
     <Description>A middleware for setting the response body when an exception occurs on an api controller method based on an api path prefix.</Description>
   </PropertyGroup>
 
