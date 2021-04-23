@@ -6,13 +6,11 @@
 namespace WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler
 {
     using System;
-    using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Diagnostics;
     using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
     using static ExceptionDetailsProvider;
 
