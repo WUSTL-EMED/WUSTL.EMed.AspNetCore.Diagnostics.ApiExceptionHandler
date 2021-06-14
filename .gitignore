@@ -363,5 +363,3 @@ FodyWeavers.xsd
 
 # Strong name key file
 *.snk
-
-WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler/WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.xml

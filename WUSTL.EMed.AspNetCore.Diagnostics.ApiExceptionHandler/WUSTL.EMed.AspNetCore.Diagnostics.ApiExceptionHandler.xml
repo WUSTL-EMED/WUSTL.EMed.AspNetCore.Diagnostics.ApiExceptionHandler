@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler</name>
+    </assembly>
+    <members>
+        <member name="T:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.ExceptionDetailsProvider">
+            <summary>
+            A static class of <see cref="T:System.Exception"/> methods.
+            </summary>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.ExceptionDetailsProvider.FlattenAndReverseExceptionTree(System.Exception)">
+            <summary>
+            Flattens and reverses a set of nested exceptions into an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Exception"/>.
+            </summary>
+            <param name="ex">The <see cref="T:System.Exception"/>.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Exception"/>.</returns>
+        </member>
+        <member name="T:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions">
+            <summary>
+            A static class of <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> extension methods.
+            </summary>
+        </member>
+        <member name="F:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.DeveloperExceptionDelegate">
+            <summary>
+            Delegate for constructing the response object for an exception.
+            </summary>
+        </member>
+        <member name="F:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.DeveloperDelegate">
+            <summary>
+            Delegate for constructing the response object when there is no exception available.
+            </summary>
+        </member>
+        <member name="F:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.JsonSerializerSettings">
+            <summary>
+            Json serializer settings for converting objects.
+            </summary>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.UseDeveloperApiExceptionResult(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)">
+            <summary>
+            Captures <see cref="T:System.Exception"/> instances from the pipeline with the given request path prefix and generates a JSON error response.
+            </summary>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="apiPathStartsWith">A prefix for api request paths (e.g. /api).</param>
+            <returns>A reference to the app after the operation has completed.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.UseApiExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Exception,System.Object})">
+            <summary>
+            Captures <see cref="T:System.Exception"/> instances from the pipeline with the given request path prefix and generates a JSON error response generated with the given delegate.
+            </summary>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="apiPathStartsWith">A prefix for api request paths (e.g. /api).</param>
+            <param name="responseObjectDelegate">A delegate to construct a response object from the <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/> and <see cref="T:System.Exception"/>.</param>
+            <returns>A reference to the app after the operation has completed.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.UseApiExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Exception,System.Threading.Tasks.Task{System.Object}})">
+            <summary>
+            Captures <see cref="T:System.Exception"/> instances from the pipeline with the given request path prefix and generates a JSON error response generated with the given delegate.
+            </summary>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="apiPathStartsWith">A prefix for api request paths (e.g. /api).</param>
+            <param name="responseObjectDelegate">A delegate to construct a response object from the <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/> and <see cref="T:System.Exception"/>.</param>
+            <returns>A reference to the app after the operation has completed.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.UseApiExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Object})">
+            <summary>
+            Captures <see cref="T:System.Exception"/> instances from the pipeline with the given request path prefix and generates a JSON error response generated with the given delegate.
+            </summary>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="apiPathStartsWith">A prefix for api request paths (e.g. /api).</param>
+            <param name="responseObjectDelegate">A delegate to construct a response object from the <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>.</param>
+            <returns>A reference to the app after the operation has completed.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.IApplicationBuilderExtensions.UseApiExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Threading.Tasks.Task{System.Object}})">
+            <summary>
+            Captures <see cref="T:System.Exception"/> instances from the pipeline with the given request path prefix and generates a JSON error response generated with the given delegate.
+            </summary>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="apiPathStartsWith">A prefix for api request paths (e.g. /api).</param>
+            <param name="responseObjectDelegate">A delegate to construct a response object from the <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>.</param>
+            <returns>A reference to the app after the operation has completed.</returns>
+        </member>
+        <member name="T:ThisAssembly">
+            <summary>Provides access to the current assembly information.</summary>
+        </member>
+        <member name="T:ThisAssembly.Git">
+            <summary>Provides access to the git information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirty">
+            <summary>IsDirty: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirtyString">
+            <summary>IsDirtyString: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.RepositoryUrl">
+            <summary>Repository URL: git@github.com:WUSTL-EMED/WUSTL.EMed.AspNetCore.Diagnostics.ApiExceptionHandler.git</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Branch">
+            <summary>Branch: master</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commit">
+            <summary>Commit: dc53e32</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Sha">
+            <summary>Sha: dc53e32a63eea317e5b6e6746505bd83bf31c535</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.CommitDate">
+            <summary>Commit date: 2021-03-13T11:48:07-06:00</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commits">
+            <summary>Commits on top of base version: 3</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Tag">
+            <summary>Tag: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseTag">
+            <summary>Base tag: </summary>
+        </member>
+        <member name="T:ThisAssembly.Git.BaseVersion">
+            <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Patch">
+            <summary>Patch: 0</summary>
+        </member>
+        <member name="T:ThisAssembly.Git.SemVer">
+            <summary>Provides access to SemVer information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Patch">
+            <summary>Patch: 3</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Label">
+            <summary>Label: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.DashLabel">
+            <summary>Label with dash prefix: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Source">
+            <summary>Source: Default</summary>
+        </member>
+    </members>
+</doc>
